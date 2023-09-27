@@ -114,7 +114,7 @@ const technologies = [
   },
 ];
 
-const experiences = [
+export const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -262,4 +262,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, testimonials, projects };
