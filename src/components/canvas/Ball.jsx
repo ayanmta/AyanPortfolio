@@ -8,12 +8,15 @@ import {
   useTexture,
 } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import { Tilt } from "react-tilt";
 
-const BallCanvas = (icon) => {
+const BallCanvas = (props) => {
+  console.log(props);
   return (
-    <div>
-      <img src={icon} />
-    </div>
+    <Tilt className="w-full h-full bg-white rounded-full gap-3,.B/">
+      <img src={props.icon} className="p-3" />
+      <p className="p-3">{props.title}</p>
+    </Tilt>
   );
 };
 export default BallCanvas;
