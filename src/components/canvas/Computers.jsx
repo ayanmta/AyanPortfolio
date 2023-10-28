@@ -6,7 +6,6 @@ import { OrbitControls, Preload, Stars, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../CanvasLoader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
-  const lumen = useGLTF("./lumen_64__computer/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
