@@ -20,7 +20,9 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
+        <section className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0">
+          <About />
+        </section>
         <Experience />
         <Tech />
         <Works />

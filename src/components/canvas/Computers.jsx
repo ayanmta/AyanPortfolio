@@ -7,7 +7,6 @@ import CanvasLoader from "../CanvasLoader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   const lumen = useGLTF("./lumen_64__computer/scene.gltf");
-  console.log(computer);
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
@@ -36,10 +35,7 @@ const ComputerCanvas = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width:500px)");
     setIsmobile(mediaQuery.matches);
-    console.log(mediaQuery, "mediaevent");
     const handleMediaQueryChange = (event) => {
-      console.log(event, "mediaevent");
-
       setIsmobile(event.matches);
     };
     mediaQuery.addEventListener("change", handleMediaQueryChange);

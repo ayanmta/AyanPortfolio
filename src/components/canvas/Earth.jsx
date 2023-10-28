@@ -7,9 +7,7 @@ import Stars from "./Stars";
 
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
-  if (earth && earth.scene) {
-    console.log("asdsadsadsadasdasd");
-  }
+
   return (
     <mesh>
       <primitive

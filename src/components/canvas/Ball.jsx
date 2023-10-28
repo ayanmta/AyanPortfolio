@@ -11,7 +11,6 @@ import CanvasLoader from "../Loader";
 import { Tilt } from "react-tilt";
 
 const BallCanvas = (props) => {
-  console.log(props);
   return (
     <Tilt className="w-full h-full bg-white rounded-full gap-3,.B/">
       <img src={props.icon} className="p-3" />
