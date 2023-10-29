@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
 
 @tailwind base;
 @tailwind components;
@@ -13,10 +30,17 @@
   color-scheme: dark;
 }
 
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+.type-write{
+overflow: hidden;
+white-space: nowrap;
+width: 0;
+animation: typing 3s steps(12,end) infinite;
 }
 
 .black-gradient {

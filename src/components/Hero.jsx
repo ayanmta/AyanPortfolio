@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import { ayanhero } from "../assets";
+import "./../index.css";
 
 const Hero = () => {
+  const [descriptors, setDescriptors] = useState([
+    "A Full-Stack Developer 🚀",
+    "An Orchardist 🌳",
+    "A Physics Enthusiast ⚛️",
+    "A Painter of Dreams 🎨",
+    "loves Exploring the Cosmos 🌌",
+    "A Mountain Nomad ⛰️",
+    "A Trekker Extraordinaire 🌄",
+    "loves Music 🎵",
+  ]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isCursor, setCursor] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % descriptors.length);
+    }, 3500);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [descriptors]);
+
+  useEffect(() => {
+    const cinterval = setInterval(() => {
+      setCursor((previsCursor) => !previsCursor);
+    }, 450);
+    return () => clearInterval(cinterval);
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -20,7 +50,22 @@ const Hero = () => {
             Hey! &nbsp;
             <span className="text-[#915eff]"> I'm Ayan,</span>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              A Developer
+              <span className="block">
+                <span className="block overflow-hidden whitespace-no-wrap">
+                  <span
+                    className="type-write"
+                    style={{
+                      display: "inline-block",
+                      width: "0",
+                      animation:
+                        "typing 3.5s steps(12, end) infinite, blink-caret 0.75s step-end infinite",
+                    }}
+                  >
+                    {descriptors[currentIndex]}
+                    {isCursor ? "|" : ""}
+                  </span>
+                </span>
+              </span>
             </p>
           </h1>
         </div>
