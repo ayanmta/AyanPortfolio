@@ -78,6 +78,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
+      <ComputersCanvas />
 
       <div className="absolute sm:bottom-10 bottom-20 flex w-full justify-center items-center">
         <a href="#about">
@@ -94,8 +95,6 @@ const Hero = () => {
           </div>
         </a>
       </div>
-
-      <ComputersCanvas className="xs:block hidden" />
     </section>
   );
 };
