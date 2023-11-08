@@ -43,7 +43,6 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
-      {experience.date}
     </VerticalTimelineElement>
   );
 };

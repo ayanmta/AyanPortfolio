@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-tertiary rounded-[20px] py-5 px-12 xs:min-h-[280px] min-h-[40px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -54,20 +54,6 @@ const About = () => {
           create efficient, scalable, and user-friendly solutions that solve
           real-world problems. Let's work together to bring your ideas to life!
         </motion.p>
-        <span className="xs:-mt-20">
-          {" "}
-          <img
-            src={ayanhero}
-            alt="ayan-hero-img"
-            height={20}
-            width={180}
-            style={{
-              filter: "blur(0.6px) grayscale(0.8) ",
-              fillOpacity: "30%",
-              borderRadius: "10%",
-            }}
-          />
-        </span>
       </div>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

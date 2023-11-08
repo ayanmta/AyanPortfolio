@@ -52,8 +52,13 @@ const Hero = () => {
             {" "}
             Hey! &nbsp;
             <span className="text-[#915eff]"> I'm Ayan,</span>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              <span style={{ color: "red", fontWeight: "bold" }}>
+            <p className={`${styles.heroSubText} xs:mt-10 mt-0 text-white-100`}>
+              <span
+                style={{
+                  color: "rgb(243 243 243 / var(--tw-text-opacity))",
+                  fontWeight: "bold",
+                }}
+              >
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -66,7 +71,7 @@ const Hero = () => {
                     "A Trekker Extraordinaire 🌄",
                     "loves Music 🎵",
                   ]}
-                  loop={5}
+                  loop={0}
                   cursor
                   cursorStyle="_"
                   typeSpeed={70}
@@ -77,6 +82,21 @@ const Hero = () => {
             </p>
           </h1>
         </div>
+        <span className="xs:-mt-10">
+          {" "}
+          <img
+            src={ayanhero}
+            alt="ayan-hero-img"
+            height={20}
+            width={180}
+            style={{
+              filter: "blur(0.6px) grayscale(0.8) ",
+              fillOpacity: "30%",
+              borderRadius: "60%",
+              zoom: "150%",
+            }}
+          />
+        </span>
       </div>
       <ComputersCanvas />
 

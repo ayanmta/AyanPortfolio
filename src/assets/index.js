@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import ayanhero from "./ayanHero.png";
+import ayanhero from "./myHero.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
