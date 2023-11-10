@@ -192,17 +192,13 @@ const projects = [
     source_code_link: "https://github.com/ayanmta/Hotel-Reservations",
   },
   {
-    name: "Job IT",
+    name: "Expanding Cards",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application offering a unique way cards can be displayed on dashboards",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
       },
       {
         name: "scss",
@@ -210,7 +206,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ayanmta/expanding-cards",
   },
   {
     name: "Trip Guide",

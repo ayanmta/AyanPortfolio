@@ -28,7 +28,7 @@ import capgemini from "./company/capgemini.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.jpeg.png";
-import jobit from "./jobit.png";
+import jobit from "./expandingcards.png";
 import tripguide from "./tripguide.png";
 
 export {
