@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import ayanhero from "./myHero.png";
+import ayanhero from "./myhero.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -27,7 +27,7 @@ import shopify from "./company/shopify.png";
 import capgemini from "./company/capgemini.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import carrent from "./carrent.jpeg.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 

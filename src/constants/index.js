@@ -171,9 +171,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Hotel Reservation",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to book, and check rooms of the hotels with price range and category. https://theshilabagh.netlify.app/",
     tags: [
       {
         name: "react",
@@ -189,7 +189,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ayanmta/Hotel-Reservations",
   },
   {
     name: "Job IT",
