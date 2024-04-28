@@ -173,7 +173,7 @@ const projects = [
   {
     name: "Hotel Reservation",
     description:
-      "Web-based platform that allows users to book, and check rooms of the hotels with price range and category. https://theshilabagh.netlify.app/",
+      `Web-based platform that allows users to book, and check rooms of the hotels with price range and category. https://shillabagh.com/`,
     tags: [
       {
         name: "react",
